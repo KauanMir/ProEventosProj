@@ -1,14 +1,14 @@
 <h2>Eventos</h2>
 
 <hr>
-
+<label class="col-2" scope="text-center">Filtro:  </label>
 <div class="row row-cols-lg-auto g-3 align-items-center" >
   <div>
 
     <label class="visually-hidden" for="inlineFormInputGroupUsername"></label>
 
     <div class="input-group">
-      <label class="col-2">Filtro:  </label>
+
       <input type="text"
              class="form-control"
              placeholder="buscar"
@@ -52,6 +52,10 @@
       <td class="text-center">{{evento.dataEvento}}</td>
       <td class="text-center">{{evento.qtdPessoas}}</td>
       <td class="text-center">{{evento.lote}}</td>
+      <td>
+        <button type="button" class="btn btn-primary btn-sm me-2">Editar</button>
+        <button type="button" class="btn btn-danger btn-sm">Excluir</button>
+      </td>
     </tr>
   </tbody>
   <tfoot *ngIf="!eventos.length">

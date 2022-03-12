@@ -20,12 +20,18 @@ import { ContatosComponent } from './contatos/contatos.component';
 import { DashboardComponent } from './Components/dashboard/dashboard.component';
 import { EventosComponent } from './Components/eventos/eventos.component';
 import { PalestrantesComponent } from './Components/palestrantes/palestrantes.component';
-import { PerfilComponent } from './Components/perfil/perfil.component';
+import { PerfilComponent } from './Components/user/perfil/perfil.component';
 import { NavComponent } from './shared/nav/nav.component';
 
-import { EventoService } from './Service/evento.service';
+import { EventoService } from './service/evento.service';
 
 import { DateTimeFormatPipe } from './helpers/DateTimeFormat.pipe';
+import { EventoDetalheComponent } from './Components/eventos/evento-detalhe/evento-detalhe.component';
+import { EventoListaComponent } from './Components/eventos/evento-lista/evento-lista.component';
+import { UserComponent } from './Components/user/user.component';
+import { LoginComponent } from './Components/user/login/login.component';
+import { RegistrationComponent } from './Components/user/registration/registration.component';
+
 
 
 @NgModule({
@@ -38,7 +44,12 @@ import { DateTimeFormatPipe } from './helpers/DateTimeFormat.pipe';
     DashboardComponent,
     NavComponent,
     DateTimeFormatPipe,
-    TituloComponent
+    TituloComponent,
+    EventoDetalheComponent,
+    EventoListaComponent,
+    UserComponent,
+    LoginComponent,
+    RegistrationComponent
    ],
   imports: [
     BrowserModule,
